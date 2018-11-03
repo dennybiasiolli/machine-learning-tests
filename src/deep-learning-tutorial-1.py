@@ -1,3 +1,4 @@
+from sklearn import linear_model
 from sklearn.model_selection import train_test_split
 import sys
 import numpy as np  # linear algebra
@@ -282,5 +283,14 @@ def logistic_regression(x_train, y_train, x_test, y_test, learning_rate,  num_it
         100 - np.mean(np.abs(y_prediction_test - y_test)) * 100))
 
 
+# execute custom logistic regression
 logistic_regression(x_train, y_train, x_test, y_test,
                     learning_rate=0.01, num_iterations=150)
+
+# execute sklearn logistic regression
+logreg = linear_model.LogisticRegression(
+    random_state=42, max_iter=150, solver='liblinear', multi_class='auto')
+print("test accuracy: {} ".format(logreg.fit(
+    x_train.T, y_train.T.ravel()).score(x_test.T, y_test.T)))
+print("train accuracy: {} ".format(logreg.fit(
+    x_train.T, y_train.T.ravel()).score(x_train.T, y_train.T)))
