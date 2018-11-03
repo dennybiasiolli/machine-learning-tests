@@ -1,5 +1,12 @@
 # machine learning tests
 
+Sample data downloaded from
+
+- https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv
+
+- http://ckan.ancitel.it/dataset/comuni-italiani-dati-territoriali-e-demografici
+
+
 #### Init projects
 
 - Create a virtual environment in `venv` directory
