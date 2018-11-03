@@ -13,6 +13,9 @@ Sample data downloaded from
 
     `python3 -m venv venv`
 
+    **Note**: use python <= 3.6.x, python 3.7 is not full compatible with
+    tensorflow (2018-11-03)
+
 - Activate the virtual environment
 
     `source venv/bin/activate`

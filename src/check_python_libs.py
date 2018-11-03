@@ -18,3 +18,9 @@ print('pandas: {}'.format(pandas.__version__))
 # scikit-learn
 import sklearn
 print('sklearn: {}'.format(sklearn.__version__))
+import keras
+print('keras: {}'.format(keras.__version__))
+import tensorflow
+print('tensorflow: {}'.format(tensorflow.__version__))
+import theano
+print('theano: {}'.format(theano.__version__))
